@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+.main {
+    display: flex;
+    background: var(--base-form-bg, #2D303E);
+}
+
+.sidebar {
+    width: 8%;
+    height: 749px;
+    background: #1F1D2B;
+    border-radius: 12px;
+    padding-top: 10px;
+}
+
+.content {
+    width: 60%;
+    height: 700px;
+    background: var(--base-form-bg, #2D303E);
+    padding: 30px;
+}
+
+.order {
+    width: 32%;
+    height: 690px;
+    background: #1F1D2B;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.sidebar-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 20px;
+}
+
+.icon1 {
+    width: 56px;
+height: 56px;
+border-radius: 12px;
+background: #eb956a48;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.icon1 ion-icon {
+    width: 40px;
+height: 40px;
+color: #EB966A;
+}
+
+.icon ion-icon {
+  font-size: 20px;
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    color: #EA7C69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.icon:hover {
+    border-radius: 12px;
+    background: #EA7C69;
+    color: white;
+}
+
+.content-start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-start h1 {
+    color: var(--White, #FFF);
+font-size: 28px;
+font-weight: 600;
+}
+
+.content-start p {
+    color: var(--text-lighter, #E0E6E9);
+font-size: 16px;
+font-weight: 400;
+}
+
+.content-start input {
+    display: flex;
+padding: 14px;
+align-items: flex-start;
+padding-left: 30px;
+gap: 8px;
+border-radius: 8px;
+border: 1px solid var(--base-dark-line, #393C49);
+background: #393C49;
+border: none;
+outline: none;
+color: white;
+}
+
+.search {
+    position: relative;
+}
+
+.search ion-icon {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    top: 12px;
+    left: 10px;
+}
+
+.content-nav {
+    margin: 20px 0;
+    display: flex ;
+    gap: 32px;
+}
+
+.content-nav a:hover {
+    color: #EA7C69;
+}
+
+.content-nav  a{
+    color: var(--White, #FFF);
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.dishes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.dishes h2 {
+    color: var(--White, #FFF);
+font-size: 20px;
+font-weight: 600;
+}
+
+.dishes select {
+    display: inline-flex;
+padding: 14px;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+border: 1px solid #393C49;
+background: #1F1D2B;
+color: white;
+border: none;
+outline: none;
+}
+
+.block {
+    width: 196px;
+    height: 226px;
+    background: #1F1D2B;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 90px;
+}
+
+.block img {
+    position: absolute;
+    bottom: 135px;
+    border-radius: 50%;
+    left: 35px;
+}
+
+.block h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 105px 0 0 50px;
+}
+
+.block h6 {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 8px 0
+}
+
+.block p {
+    color: var(--text-light, #ABBBC2);
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+}
+
+.main-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 780px;
+    align-items: center;
+    justify-content: space-around;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.main-blocks::-webkit-scrollbar {
+    width: 5px;
+    background:#393C49;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.main-blocks::-webkit-scrollbar:hover {
+    background: #EA7C69;
+    cursor: pointer;
+}
+
+.order h2  {
+    color: var(--White, #FFF);
+font-size: 23px;
+font-weight: 600;
+}
+
+.order-btns {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+hr {
+border: 1px solid var(--base-dark-line, #393C49);
+}
+
+.order-btns button{
+padding: 11px 16px;
+color:#EA7C69;
+font-size: 14px;
+margin: 20px 0;
+border-radius: 8px;
+border: 1px solid var(--base-dark-line, #393C49);
+background: var(--base-dark-bg-2, #1F1D2B);
+cursor: pointer;
+transition: .3s;
+}
+
+.order-btns button:hover {
+    background: #EA7C69;
+    color: white;
+    transform: scale(1.1);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.item h3 {
+    color: var(--White, #FFF);
+font-size: 17px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+.dish {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.dish h5{
+    color: var(--White, #FFF);
+font-size: 15px;
+font-weight: 500;
+}
+
+.dish p {
+    color: var(--text-light, #ABBBC2);
+font-size: 13px;
+font-weight: 500;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.one button {
+width: 48px;
+padding: 14px 14px 12px 14px;
+gap: 8px;
+color: white;
+font-size: 16px;
+border-radius: 8px;
+border: 1px solid var(--base-dark-line, #393C49);
+background: var(--base-form-bg, #2D303E);
+}
+
+.one h4 {
+    color: var(--White, #FFF);
+font-size: 16px;
+font-weight: 500;
+}
+
+.trash {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.trash input {
+width: 230px;
+padding: 14px 96px 14px 14px;
+gap: 8px;
+color: white;
+font-size: 14px;
+border-radius: 8px;
+border: none;
+outline: none;
+border: 1px solid var(--base-dark-line, #393C49);
+background: var(--base-form-bg, #2D303E);
+}
+
+.trash button {
+padding: 14px 15px;
+gap: 10px;
+border-radius: 8px;
+background: none;
+border: 1px solid var(--Primary-Color, #EA7C69);
+}
+.trash ion-icon {
+    font-size: 16px;
+    color: #EA7C69;
+}
+
+.orders {
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.orders::-webkit-scrollbar {
+    width: 0;
+}
+
+.sum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.sum span {
+    color: var(--text-light, #ABBBC2);
+font-size: 15px;
+font-weight: 400;
+}
+
+.sum h6 {
+    color: var(--White, #FFF);
+font-size: 16px;
+font-weight: 500;
+}
+
+.btn {
+width: 100%;
+padding: 14px;
+gap: 8px;
+color: white;
+cursor: pointer;
+border: none;
+outline: none;
+margin-top: 20px;
+border-radius: 8px;
+background: var(--Primary-Color, #EA7C69);
+box-shadow: 0px 8px 24px 0px rgba(234, 124, 105, 0.30);
+}
+
+
+
+
+
+
